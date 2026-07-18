@@ -7,13 +7,14 @@
     <title>{{ title }}</title>
 </head>
 <body>
+   
     <video autoplay muted loop playsinline id="bg-video">
         <source src="{{ url_for('static', filename='vids/background video.mp4') }}" type="video/mp4">
     </video>
     <!-- Your visible web page content goes here -->
     {% block content %}
     {% endblock content %}
-
+    <script src="{{ url_for("static", filename='script.js') }}"></script>
 </body>
 </html>
 
