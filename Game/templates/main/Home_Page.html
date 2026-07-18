@@ -1,0 +1,10 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <h1 id="title">The Simplest <br> Game Possible</h1>
+    <div id="bottuns">
+        <a class="functions" href="{{ url_for('main.rules') }}">Play</a>
+        <a class="functions" href="{{ url_for('main.rules') }}">Rules</a>
+        <a class="functions" href="{{ url_for('main.credits') }}">Credits</a>
+        <a class="functions" href="{{ url_for('main.rules') }}">Review</a>
+    </div>
+{% endblock content %}
