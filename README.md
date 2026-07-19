@@ -43,8 +43,8 @@ Components
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/BeastMas065/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/BeastMas065/The-Simplest-Game-Possible.git
+   cd The-Simplest-Game-Possible.git
    ```
 
 2. **Set up a virtual environment**
@@ -61,7 +61,7 @@ Components
 
 4. **Run the application**
    ```bash
-   flask run
+   run run.py file
    ```
 
 5. Go to `http://127.0.0.1:5000` in your browser.
