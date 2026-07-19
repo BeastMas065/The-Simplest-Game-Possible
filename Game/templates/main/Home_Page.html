@@ -2,10 +2,35 @@
 {% block content %}
     <h1 id="title">The Simplest <br> Game Possible</h1>
     <div id="bottuns">
-        <button class="functions" href="{{ url_for('main.rules') }}">Play</button>
-        <button class="functions" href="{{ url_for('main.rules') }}">Rules</button>
-        <button class="functions" href="{{ url_for('main.credits') }}">Credits</button>
+        <button id="play-button" class="functions">Play</button>
+        <button id="rules" class="functions">Rules</button>
+        <button id="credits" class="functions">Credits</button>
         <button id="review" class="functions">Review</button>
+    </div>
+
+    <div class="modal" id="game-mode">
+        <div class="modal-inner">   
+            <h2>Game mode?</h2>
+            <p>
+                What mode do you wanna play?
+            </p>
+            <div id="modal-options">
+                <button class="modal-button" id="online">Online Multiplayer</button>
+                <button class="modal-button" id="local">Local Multiplayer</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="troll001">
+        <div class="modal-inner">   
+            <h2>Come on TOUCH some grass</h2>
+            <p>
+                Go out!. Go make some friends and get together to play!
+            </p>
+            <div id="modal-options">
+                <button class="modal-button" id="play">Play Local Multiplayer</button>
+            </div>
+        </div>
     </div>
     
     <div class="modal" id="review1">
@@ -15,9 +40,9 @@
                 The dev uses trash humour to hide his inferior skillset. 
                 Do you think he will give a fuck about your review?
             </p>
-            <div id="review1options">
-                <button class="review1" id="no-review">Nah</button>
-                <button class="review1" id="proceed2review1">Still review</button>
+            <div id="modal-options">
+                <button class="modal-button" id="no-review">Nah</button>
+                <button class="modal-button" id="proceed2review1">Still review</button>
             </div>
         </div>
     </div>
@@ -28,9 +53,9 @@
             <p>
                 Or maybe He does give one fuck.
             </p>
-            <div id="review1options">
-                <button class="review1" id="no-review2">Fuck off dev</button>
-                <button class="review1" id="proceed2review2">Review</button>
+            <div id="modal-options">
+                <button class="modal-button" id="no-review2">Fuck off dev</button>
+                <button class="modal-button" id="proceed2review2">Review</button>
             </div>
         </div>
     </div>
