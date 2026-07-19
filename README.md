@@ -61,7 +61,7 @@ Components
 
 4. **Run the application**
    ```bash
-   flask run
+   run run.py file
    ```
 
 5. Go to `http://127.0.0.1:5000` in your browser.
