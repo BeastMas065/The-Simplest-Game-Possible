@@ -43,8 +43,8 @@ Components
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/BeastMas065/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/BeastMas065/The-Simplest-Game-Possible.git
+   cd The-Simplest-Game-Possible.git
    ```
 
 2. **Set up a virtual environment**
