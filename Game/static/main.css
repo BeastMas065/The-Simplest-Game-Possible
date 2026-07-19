@@ -105,7 +105,7 @@ body {
     line-height: 3vh;
     color: rgb(5, 132, 243);
     letter-spacing: 2px;
-    -webkit-text-stroke: 0.17px white;
+    -webkit-text-stroke: 0.17px rgb(130, 155, 38);
 }
 #review1options {
     display:flex;
