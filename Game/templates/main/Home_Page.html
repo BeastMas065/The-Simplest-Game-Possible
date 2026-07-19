@@ -2,9 +2,9 @@
 {% block content %}
     <h1 id="title">The Simplest <br> Game Possible</h1>
     <div id="bottuns">
-        <a class="functions" href="{{ url_for('main.rules') }}">Play</a>
-        <a class="functions" href="{{ url_for('main.rules') }}">Rules</a>
-        <a class="functions" href="{{ url_for('main.credits') }}">Credits</a>
+        <button class="functions" href="{{ url_for('main.rules') }}">Play</button>
+        <button class="functions" href="{{ url_for('main.rules') }}">Rules</button>
+        <button class="functions" href="{{ url_for('main.credits') }}">Credits</button>
         <button id="review" class="functions">Review</button>
     </div>
     
@@ -17,7 +17,20 @@
             </p>
             <div id="review1options">
                 <button class="review1" id="no-review">Nah</button>
-                <button class="review1" id="proceed2review">Still review</button>
+                <button class="review1" id="proceed2review1">Still review</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="review2">
+        <div class="modal-inner">
+            <h2>👉👈</h2>
+            <p>
+                Or maybe He does give one fuck.
+            </p>
+            <div id="review1options">
+                <button class="review1" id="no-review2">Fuck off dev</button>
+                <button class="review1" id="proceed2review2">Review</button>
             </div>
         </div>
     </div>
