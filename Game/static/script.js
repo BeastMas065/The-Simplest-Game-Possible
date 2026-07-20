@@ -13,9 +13,29 @@ const troll001 = document.getElementById("troll001");
 const play = document.getElementById("play");
 const rules = document.getElementById("rules");
 const credits = document.getElementById("credits");
+const close_button1 = document.getElementById("close-button1");
+const close_button2 = document.getElementById("close-button2");
+const close_button3 = document.getElementById("close-button3");
+const close_button4 = document.getElementById("close-button4");
 
 mode_selector.addEventListener("click", () => {
     mode_modal.classList.add("open");
+});
+
+close_button1.addEventListener("click",() => {
+    mode_modal.classList.remove("open");
+});
+
+close_button2.addEventListener("click",() => {
+    troll001.classList.remove("open");
+});
+
+close_button3.addEventListener("click",() => {
+    review_modal.classList.remove("open");
+});
+
+close_button4.addEventListener("click",() => {
+    review_modal2.classList.remove("open");
 });
 
 online.addEventListener("click", ()=> {

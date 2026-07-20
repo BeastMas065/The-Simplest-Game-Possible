@@ -39,7 +39,7 @@ body {
     display: inline-block;
     text-shadow: 3px 3px 0px #ff0055;
 }
-#bottuns {
+#buttons {
     grid-area: stack;
     z-index: 1;
     margin-top: 40vh;
@@ -107,6 +107,20 @@ body {
     color: rgb(5, 132, 243);
     letter-spacing: 2px;
     -webkit-text-stroke: 0.17px rgb(130, 155, 38);
+}
+.close-button {
+    align-self: flex-end;
+    height: 4vh;
+    width: 4vw;
+    margin-bottom: 5px;
+    font-family: Impact, Charcoal;
+    background-color:#1b1b1b00;
+    color: #fff;
+    font-size: large;
+}
+.close-button:hover {
+    background-color: #fff;
+    color: #000;
 }
 #modal-options {
     display:flex;
