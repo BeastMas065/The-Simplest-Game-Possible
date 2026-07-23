@@ -1,0 +1,19 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <h1 id="title">How To</h1>
+    <div id="buttons">
+        <button id="objective-button" class="functions">Objective</button>
+        <button id="how-to" class="functions">How to Play</button>
+        <button id="credits" class="functions">Win Condition</button>
+        <button id="review" class="functions">Important Notes</button>
+    </div>
+    <div class="modal" id="objective-modal">
+        <div class="modal-inner"> 
+            <button id="close-button5" class="close-button">x</button>  
+            <h2>Game mode?</h2>
+            <p>
+                Two players take turns building a single shared string by adding one character at a time: X or O. There is no board and no fixed length. The string keeps growing until one player meets their winning condition.
+            </p>
+        </div>
+    </div>
+{% endblock content %}

@@ -12,10 +12,10 @@ def home():
     page_title = "Simplest Game Possible"
     return render_template("main/Home_Page.html", title=page_title)
 
-@main.route('/rules')
-def rules():
-    page_title = "Rules"
-    return render_template("main/rules.html", title=page_title)
+@main.route('/how-to')
+def how_to():
+    page_title = "How to"
+    return render_template("main/how_to.html", title=page_title)
 
 @main.route('/credits')
 def credits():

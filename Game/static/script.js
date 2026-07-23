@@ -11,12 +11,15 @@ const online = document.getElementById("online");
 const local = document.getElementById("local");
 const troll001 = document.getElementById("troll001");
 const play = document.getElementById("play");
-const rules = document.getElementById("rules");
+const how_to = document.getElementById("how-to");
 const credits = document.getElementById("credits");
 const close_button1 = document.getElementById("close-button1");
 const close_button2 = document.getElementById("close-button2");
 const close_button3 = document.getElementById("close-button3");
 const close_button4 = document.getElementById("close-button4");
+const close_button5 = document.getElementById("close-button5");
+const objective_modal = document.getElementById("objective-modal");
+const objective_button = document.getElementById("objective-button");
 
 mode_selector.addEventListener("click", () => {
     mode_modal.classList.add("open");
@@ -38,6 +41,14 @@ close_button4.addEventListener("click",() => {
     review_modal2.classList.remove("open");
 });
 
+close_button5.addEventListener("click",() => {
+    objective_modal.classList.remove("open");
+});
+
+objective_button.addEventListener("click", ()=> {
+    objective_modal.classList.add('open');
+});
+
 online.addEventListener("click", ()=> {
     mode_modal.classList.remove("open");
     troll001.classList.add("open");
@@ -53,8 +64,8 @@ play.addEventListener("click", () => {
     window.location.href = '/game';
 });
 
-rules.addEventListener("click", () => {
-    window.location.href = '/rules';
+how_to.addEventListener("click", () => {
+    window.location.href = '/how-to';
 });
 
 credits.addEventListener("click", () => {

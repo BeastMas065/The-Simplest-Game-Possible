@@ -34,7 +34,7 @@ Components
 - Two-player turn-based game play — **local (on the same machine), not over the network**
 - Shared state for the string, alternating X/O moves by player
 - Custom win condition checking (Python code)
-- Routes: Home, Play, Rules, Credits
+- Routes: Home, Play, How to, Credits
 - Custom-styled user interface (no CSS framework used)
 
 ---
