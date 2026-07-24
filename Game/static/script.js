@@ -21,76 +21,76 @@ const close_button5 = document.getElementById("close-button5");
 const objective_modal = document.getElementById("objective-modal");
 const objective_button = document.getElementById("objective-button");
 
-mode_selector.addEventListener("click", () => {
-    mode_modal.classList.add("open");
+mode_selector?.addEventListener("click", () => {
+    mode_modal?.classList.add("open");
 });
 
-close_button1.addEventListener("click",() => {
-    mode_modal.classList.remove("open");
+close_button1?.addEventListener("click",() => {
+    mode_modal?.classList.remove("open");
 });
 
-close_button2.addEventListener("click",() => {
-    troll001.classList.remove("open");
+close_button2?.addEventListener("click",() => {
+    troll001?.classList.remove("open");
 });
 
-close_button3.addEventListener("click",() => {
-    review_modal.classList.remove("open");
+close_button3?.addEventListener("click",() => {
+    review_modal?.classList.remove("open");
 });
 
-close_button4.addEventListener("click",() => {
-    review_modal2.classList.remove("open");
+close_button4?.addEventListener("click",() => {
+    review_modal2?.classList.remove("open");
 });
 
-close_button5.addEventListener("click",() => {
-    objective_modal.classList.remove("open");
+close_button5?.addEventListener("click",() => {
+    objective_modal?.classList.remove("open");
 });
 
-objective_button.addEventListener("click", ()=> {
-    objective_modal.classList.add('open');
+objective_button?.addEventListener("click", ()=> {
+    objective_modal?.classList.add('open');
 });
 
-online.addEventListener("click", ()=> {
-    mode_modal.classList.remove("open");
-    troll001.classList.add("open");
+online?.addEventListener("click", ()=> {
+    mode_modal?.classList.remove("open");
+    troll001?.classList.add("open");
 });
 
-local.addEventListener("click", ()=> {
-    mode_modal.classList.remove("open");
+local?.addEventListener("click", ()=> {
+    mode_modal?.classList.remove("open");
     window.location.href = "/game";
 });
 
-play.addEventListener("click", () => {
-    troll001.classList.remove("open");
+play?.addEventListener("click", () => {
+    troll001?.classList.remove("open");
     window.location.href = '/game';
 });
 
-how_to.addEventListener("click", () => {
+how_to?.addEventListener("click", () => {
     window.location.href = '/how-to';
 });
 
-credits.addEventListener("click", () => {
+credits?.addEventListener("click", () => {
     window.location.href = '/credits';
 });
 
-review.addEventListener("click", () => {
-    review_modal.classList.add("open");
+review?.addEventListener("click", () => {
+    review_modal?.classList.add("open");
 });
 
-no_review1.addEventListener("click", () => {
-    review_modal.classList.remove("open");
-    review_modal2.classList.add("open");
+no_review1?.addEventListener("click", () => {
+    review_modal?.classList.remove("open");
+    review_modal2?.classList.add("open");
 });
 
-proceed_review1.addEventListener("click", () => {
-    review_modal.classList.remove("open");
+proceed_review1?.addEventListener("click", () => {
+    review_modal?.classList.remove("open");
     window.location.href = "/Review";
 });
 
-proceed_review2.addEventListener("click", () => {
-    review_modal2.classList.remove("open");
+proceed_review2?.addEventListener("click", () => {
+    review_modal2?.classList.remove("open");
     window.location.href = "/Review";
 });
 
-no_review2.addEventListener("click", () => {
-    review_modal2.classList.remove("open");
+no_review2?.addEventListener("click", () => {
+    review_modal2?.classList.remove("open");
 });
