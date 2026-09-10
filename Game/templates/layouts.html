@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main.css') }}">
     <title>{{ title }}</title>
+
+    {% block extra_css %}
+    {% endblock %}
 </head>
 <body>
-   
-    <video autoplay muted loop playsinline id="bg-video">
-        <source src="{{ url_for('static', filename='vids/background video.mp4') }}" type="video/mp4">
-    </video>
+    <div id="background"></div>
+    
     <!-- Your visible web page content goes here -->
     {% block content %}
     {% endblock content %}
-    <script src="{{ url_for("static", filename='script.js') }}"></script>
+
+    
+    {% block extra_js %}
+    {% endblock %}
+
 </body>
 </html>
 
