@@ -13,11 +13,29 @@ body {
 #background {
     position: fixed;
     inset: 0;
+    overflow: hidden;
+    z-index: -1;
 
     background-image: url("../background/Background_img.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60px);
+    grid-auto-rows: 100%;
+    column-gap: 160px;
+    justify-content: center;
+    padding-inline: 45px;
+}
+
+.forward {
+    background-color: black;
+    border: 2px solid brown;
+    overflow: hidden;
+}
+
+.forward span {
+    color: white;
+    transform: rotate(90deg);
 }
