@@ -1,0 +1,136 @@
+html, body {
+    overflow: hidden;
+}
+
+#title {
+    width: 40vw;
+    height: 50vh;
+    background-color: black;
+    border-radius: 60%;
+    position: absolute;
+    left: 20%;
+    top: -10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffae00;
+    box-shadow: 0 0 15px 5px black;
+}
+#heading {
+    color: aliceblue;
+    width: 30vw;
+    text-align: center;
+    font-family: 'Ink Free';
+    font-size: 4vw;
+    color: #ffae00;
+}
+
+#play-btn-border {
+    width: calc(60vh + 20px);
+    height: calc(60vh + 20px);
+    border-radius: 50%;
+    border: 7px dashed black;
+    position: absolute;
+    bottom: calc(-10vh - 10px);
+    right: calc(-10vh - 10px);
+    animation: rotate 30s linear infinite;
+    z-index: 0;
+    transition: scale 0.2s ease;
+}
+
+#play-btn {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: -10vh;
+    right: -10vh;
+    font-family: 'Idiqlat';
+    font-size: 6vw;
+    color: #ffffff;
+    text-align: center;
+    padding: 15vh 0;
+    z-index: 2;
+    transition: transform 0.2s ease;
+}
+
+#play-btn:hover {
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+body:has(#play-btn:hover) #play-btn-border {
+    scale: 1.1;
+}
+
+.red-circle {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: red;
+    font-family: 'Idiqlat';
+    font-size: 1vw;
+    text-align: center;
+    padding: 1.5vh;
+    padding-top: 2vh;
+    border: 2px solid black;
+    color: #fff;
+}
+
+#howto{
+    position: absolute;
+    bottom: 45vh;
+    right: 10vh;
+    z-index: 1;
+    transition: transform 0.2s ease;
+}
+#credits{
+    position: absolute;
+    right: 45vh;
+    bottom: 10vh;
+    z-index: 1;
+    padding: 6vh 1vh;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+#review {
+    position: absolute;
+    bottom: -3vh;
+    left: -3vh;
+    padding-top: 5vh;
+    z-index: 2;
+    transition: transform 0.2s ease;
+    padding-left: 3vh;
+}
+#review-border {
+    width: calc(15vh + 10px);
+    height: calc(15vh + 10px);
+    border-radius: 50%;
+    border: 3px dashed black;
+    animation: rotate 60s linear infinite;
+    position: absolute;
+    bottom: calc(-3vh - 5px);
+    left: calc(-3vh - 5px);
+    z-index: 0;
+    transition: scale 0.2s ease;
+    box-shadow: 0 0 15px 3px black;
+}
+.red-circle:hover {
+    transform: scale(1.1);
+    cursor:pointer;
+}
+
+body:has(#review:hover) #review-border {
+    scale: 1.1;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}

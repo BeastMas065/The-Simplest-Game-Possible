@@ -1,8 +1,23 @@
 {% extends "layouts.html" %}
+
 {% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="CSS/home_page.css") }}">
 {% endblock %}
+
 {% block content %}
+    <div id="title"><span id="heading">The Simplest Game Possible</span></div>
+    <div id="play-btn-border"></div>
+    <div id="play-btn">Play</div>
+    <div id="credits" class="red-circle">Credits</div>
+    <div id="howto" class="red-circle">How To Play</div>
+    <div id="review" class="red-circle">Review</div>
+    <div id="review-border"></div>
 {% endblock content %}
 
 {% block extra_js %}
+    <script>
+        const gameUrl = "{{ url_for('main.game') }}"
+    </script>
+
+    <script src="{{ url_for('static', filename='JS/home_page.js') }}"></script>
 {% endblock %}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Idiqlat:wght@200;300;400&display=swap" rel="stylesheet">
     <title>{{ title }}</title>
 
     {% block extra_css %}
@@ -11,22 +14,19 @@
 </head>
 <body>
     <div id="background">
-        <div id="forward1" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward1" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward2" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward2" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward3" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward3" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward4" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward4" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward5" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward5" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward6" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward6" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward7" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward7" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="forward8" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
-        <div id="backward8" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+        <div id="container">
+            <div id="forward1" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="backward1" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="forward2" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="backward2" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="forward3" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="backward3" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="forward4" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="backward4" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="forward5" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="backward5" class="backward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+            <div id="forward6" class="forward moving"><span>XOXOXOXOXOXOXOXOXOXOXOXOX</span></div>
+        </div>
     </div>
     
     {% block content %}
