@@ -1,4 +1,8 @@
 const playBtn = document.getElementById("play-btn")
+const modeSelector = document.getElementById("mode-selector")
+const onlinebtn = document.getElementById("online")
+const offlineBtn = document.querySelectorAll(".offline")
+const onlineModal = document.getElementById("online-player")
 const review = document.getElementById("review")
 const firstReview = document.getElementById("review1")
 const secondReview = document.getElementById("review2")
@@ -8,10 +12,20 @@ const r1Yes = document.getElementById("r1yes")
 const r1No = document.getElementById("r1no")
 const r2Yes = document.getElementById("r2yes")
 const r2No = document.getElementById("r2no")
+const howToPLayBtn = document.getElementById("how-to-btn")
+const howToPLay = document.getElementById("how-to")
 
 playBtn.addEventListener("click", ()=>{
-    window.location.href = gameUrl;
+    modeSelector.showModal()
 })
+onlinebtn.addEventListener('click', ()=>{
+    modeSelector.close()
+    onlineModal.showModal()
+})
+offlineBtn.forEach(btn => btn.addEventListener("click", ()=>{
+    window.location.href = gameUrl;
+}))
+
 
 review.addEventListener("click", ()=>{
     firstReview.showModal();
@@ -36,4 +50,8 @@ r2Yes.addEventListener("click", ()=> {
 })
 r2No.addEventListener("click", ()=> {
     secondReview.close();
+})
+
+howToPLayBtn.addEventListener("click", ()=>{
+    howToPLay.showModal();
 })

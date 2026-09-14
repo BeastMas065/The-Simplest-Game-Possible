@@ -9,10 +9,29 @@
     <div id="play-btn-border"></div>
     <div id="play-btn">Play</div>
     <div id="credits" class="red-circle">Credits</div>
-    <div id="howto" class="red-circle">How To Play</div>
+    <div id="how-to-btn" class="red-circle">How To Play</div>
     <div id="review" class="red-circle">Review</div>
     <div id="review-border"></div>
 
+    <dialog id="mode-selector">
+        <div class="close-modal-btn">
+            <button type="button" class="close-btns">×</button>
+        </div> 
+        <p>Which Mode</p> 
+        <div class="modal-btns"> 
+            <button type="button" id="online">Online</button> 
+            <button type="button" class="offline">Offline</button> 
+        </div> 
+    </dialog>
+    <dialog id="online-player">
+        <div class="close-modal-btn">
+            <button type="button" class="close-btns">×</button>
+        </div> 
+        <p>Go make some friends, hangout with them and play this when you are together <br>dont isolate yourself</p> 
+        <div class="modal-btns"> 
+            <button type="button" class="offline">Offline</button> 
+        </div> 
+    </dialog>
     <dialog id="review1">
         <div class="close-modal-btn">
             <button type="button" class="close-btns">×</button>
@@ -20,7 +39,7 @@
         <p> Dev uses trash humour to hide his inferior skillset. Do you think he cares about your review? </p> 
         <div class="modal-btns"> 
             <button type="button" id="r1no">F off</button> 
-            <button type="button" id="r1yes">Still do</button> 
+            <button type="button" id="r1yes">Still review</button> 
         </div> 
     </dialog>
     <dialog id="review2"> 
@@ -37,9 +56,48 @@
         <div class="close-modal-btn"> 
             <button type="button" class="close-btns">×</button> 
         </div> 
-        <p> Please review here </p> 
+        <p>Thank You Dude<br> Please review here </p> 
         <div class="modal-btns"> 
             <button type="button" id="tweeter">X tweet</button> 
+        </div> 
+    </dialog>
+    <dialog id="how-to"> 
+        <div class="close-modal-btn"> 
+            <button type="button" class="close-btns">×</button> 
+        </div> 
+        <span>
+            How to Play
+        </span>
+        <div id="scroller">
+            The Simplest Game Possible is a two-player game of Xs and Os. Build the sequence carefully and try to complete your pattern before your opponent does.
+            <br><br>1. Take Your Turn
+            <br><br> Player 1 goes first.
+            <br>On each turn, choose either X or O.
+            <br>Your chosen letter is added to the shared sequence.
+            <br>Players take turns until someone wins or the sequence reaches 30 letters.
+            <br><br>2. Your Goal
+            <br>
+            <br>Player 1
+            <br>Create 2 identical, non-overlapping sequences of 5 consecutive letters.
+            <br>
+            <br>Player 2
+            <br> Create 4 identical, non-overlapping sequences of 3 consecutive letters.
+            <br>
+            <br>Any combination of X and O can form a sequence. You don't choose a pattern beforehand.
+            <br>
+            <br>3. Win the Game
+            <br>
+            <br>The moment a player completes their objective, the game ends.
+            <br>
+            <br>Player 1 completes their 2 matching 5-letter sequences → Player 1 wins.
+            <br>Player 2 completes their 4 matching 3-letter sequences → Player 2 wins.
+            <br>Both complete their objectives on the same move → Draw.
+            <br>30 letters are reached without a winner → Draw.
+            <br>
+            <br>Choose wisely. Every letter counts.
+        </div> 
+        <div class="modal-btns"> 
+            <button type="button" class="close-btns">Done</button> 
         </div> 
     </dialog>
 {% endblock content %}
