@@ -3,7 +3,23 @@
     <link rel="stylesheet" href="{{ url_for("static", filename="CSS/game.css") }}">
 {% endblock %}
 {% block content %}
+    <div class="back">Back</div>
     <div id="text-container"><div id="text"></div></div>
+    <div class="controller">
+        <div id="left">O</div>
+        <div id="right">X</div>
+    </div>
+    <div class="player">
+    <span class="player-1 active">
+        <span class="bi--person-fill"></span>
+        Player 1
+    </span>
+
+    <span class="player-2">
+        <span class="bi--person-fill"></span>
+        Player 2
+    </span>
+</div>
 {% endblock %}
 {% block extra_js %}
     <script src="{{ url_for("static", filename="JS/game.js") }}"></script>
