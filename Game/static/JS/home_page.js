@@ -14,6 +14,8 @@ const r2Yes = document.getElementById("r2yes")
 const r2No = document.getElementById("r2no")
 const howToPLayBtn = document.getElementById("how-to-btn")
 const howToPLay = document.getElementById("how-to")
+const creditsModal = document.getElementById("credits-modal")
+const creditsBtn = document.getElementById("credits")
 
 playBtn.addEventListener("click", ()=>{
     modeSelector.showModal()
@@ -26,6 +28,9 @@ offlineBtn.forEach(btn => btn.addEventListener("click", ()=>{
     window.location.href = gameUrl;
 }))
 
+creditsBtn.addEventListener("click", ()=>{
+    creditsModal.showModal()
+})
 
 review.addEventListener("click", ()=>{
     firstReview.showModal();

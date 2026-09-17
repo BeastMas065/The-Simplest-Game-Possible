@@ -3,24 +3,56 @@
     <link rel="stylesheet" href="{{ url_for("static", filename="CSS/game.css") }}">
 {% endblock %}
 {% block content %}
-    <div class="back">Back</div>
+    <div id="back">Back</div>
     <div id="text-container"><div id="text"></div></div>
+    <div id="word-count">Letter Count: <span id="count">0</span></div>
     <div class="controller">
         <div id="left">O</div>
         <div id="right">X</div>
     </div>
     <div class="player">
-    <span class="player-1 active">
-        <span class="bi--person-fill"></span>
-        Player 1
-    </span>
+        <span id="player1" class="player-1 active">
+            <span class="bi--person-fill"></span>
+            Player 1
+        </span>
 
-    <span class="player-2">
-        <span class="bi--person-fill"></span>
-        Player 2
-    </span>
-</div>
+        <span id="player2" class="player-2">
+            <span class="bi--person-fill"></span>
+            Player 2
+        </span>
+    </div>
+    <dialog id="exit-selector">
+        <div class="close-modal-btn stay">
+            <button type="button" class="close-btns exit">×</button>
+        </div> 
+        <p>Are you sure?</p> 
+        <div class="modal-btns"> 
+            <button type="button" class="exit">Exit</button> 
+            <button type="button" class="stay">Stay</button> 
+        </div> 
+    </dialog>
+    <dialog id="drawn"> 
+        <div class="close-modal-btn"> 
+            <button type="button" class="close-btns exit">×</button> 
+        </div> 
+        <p>The game has Drawn</p> 
+        <div class="modal-btns"> 
+            <button type="button" id="tweeter" class="exit">Main Menu</button> 
+        </div> 
+    </dialog>
+    <dialog id="result"> 
+        <div class="close-modal-btn"> 
+            <button type="button" class="close-btns exit">×</button> 
+        </div> 
+        <p id="resultpara">The game has Drawn</p> 
+        <div class="modal-btns"> 
+            <button type="button" id="tweeter" class="exit">Main Menu</button> 
+        </div> 
+    </dialog>
 {% endblock %}
 {% block extra_js %}
+    <script>
+        const MenuUrl = "{{ url_for('main.home') }}"
+    </script>
     <script src="{{ url_for("static", filename="JS/game.js") }}"></script>
 {% endblock %}
