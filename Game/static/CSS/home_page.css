@@ -325,3 +325,7 @@ dialog:not([open]) {
         transform: rotate(180deg);
     }
 }
+
+a{
+    color: #ffae00;
+}
