@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Idiqlat:wght@200;300;400&display=swap" rel="stylesheet">
     <title>{{ title }}</title>
 
+    <script>
+        window.va = window.va || function () {
+            (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+
+    <script defer src="/<unique-path>/script.js"></script>
+
     {% block extra_css %}
     {% endblock %}
 </head>
